@@ -1,10 +1,10 @@
-package com.example.cmpt276.asn2;
+package com.example.cmpt276.asn1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Asn2ApplicationTests {
+class Asn1ApplicationTests {
 
 	@Test
 	void contextLoads() {

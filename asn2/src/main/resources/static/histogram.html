@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram Generator</title>
+    <link rel="stylesheet" href="/css/histogram.css">
+    <script src="/js/calculate.js" defer></script>
+</head>
+<body>
+    <h2>Histogram Generator</h2>
+    <div class="container">
+      <div class="left-div">
+        <div class="title">Lower bounds</div>
+        <div class="box-container">
+          <div class="box-title">Max</div>
+          <input id="max" type="text" value="100.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">A+</div>
+          <input id="aplus" type="text" value="95.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">A</div>
+          <input id="a" type="text" value="90.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">A-</div>
+          <input id="aminus" type="text" value="85.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">B+</div>
+          <input id="bplus" type="text" value="80.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">B</div>
+          <input id="b" type="text" value="75.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">B-</div>
+          <input id="bminus" type="text" value="70.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">C+</div>
+          <input id="cplus" type="text" value="65.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">C</div>
+          <input id="c" type="text" value="60.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">C-</div>
+          <input id="cminus" type="text" value="55.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">D</div>
+          <input id="d" type="text" value="50.00">
+        </div>
+        <div class="box-container">
+          <div class="box-title">F</div>
+          <input id="f" type="text" value="0.00">
+        </div>
+      </div>
+      <div>
+        <div class="right-div">
+          <div class="h-title">Histogram</div>
+          <div class="box-container2">
+            <div class="box-title">A+</div>
+                <table>
+                    <tr id="aplush">
+                    </tr>
+                </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">A</div>
+            <table>
+                <tr id="ah">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">A-</div>
+            <table>
+                <tr id="aminush">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">B+</div>
+            <table>
+                <tr id="bplush">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">B</div>
+            <table>
+                <tr id="bh">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">B-</div>
+            <table>
+                <tr id="bminush">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">C+</div>
+            <table>
+                <tr id="cplush">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">C</div>
+            <table>
+                <tr id="ch">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">C-</div>
+            <table>
+                <tr id="cminush">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">D</div>
+            <table>
+                <tr id="dh">
+                </tr>
+            </table>
+          </div>
+          <div class="box-container2">
+            <div class="box-title">F</div>
+            <table>
+                <tr id="fh">
+                </tr>
+            </table>
+          </div>  
+        </div>
+        <div class="bottom-div">
+          <span class="alttitle">New Grade:</span>
+          <input id="new-grade" type="text">
+          <button id="add-button">Add Grade</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
